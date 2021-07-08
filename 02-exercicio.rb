@@ -26,7 +26,7 @@ puts pergunta4 + cholatesVida.to_s
 
 # Se minha idade é de 1232 milhões de segundos, qual é minha idade em anos?
 desafio = "Se minha idade é de 1232 milhões de segundos, qual é minha idade em anos? "
-idadeAnos = 1232000000.0 / 60 / 60 / 24 / 365
+idadeAnos = 1232000000.to_f / 60 / 60 / 24 / 365
 
 puts desafio + idadeAnos.to_s
 
