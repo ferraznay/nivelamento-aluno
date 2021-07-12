@@ -42,7 +42,7 @@ def idade_em_segundos (dias , horas, minutos , segundos , idade)
 total_idade_em_segundos = dias * horas * minutos * segundos * idade
 puts "3. retornar a idade em valor de segundos, sendo que a idade deve ser informada para a função"
 puts
-puts  dias.to_s + " dias do ano " + " * "  + horas.to_s + " horas do dia " + " * " + minutos.to_s + " minutos " + " * " + segundos.to_s + " segundos " + " * " + idade.to_s + " idade = "
+puts  dias.to_s + " dias do ano " + " * "  + horas.to_s + " horas do dia " + " * " + minutos.to_s + " minutos " + " * " + segundos.to_s + " segundos " + " * " + idade.to_s + " anos = "
     return total_idade_em_segundos
 end
 idade = idade_em_segundos(365 , 24 , 60 , 60 , 28)
