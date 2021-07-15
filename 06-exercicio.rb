@@ -61,7 +61,7 @@ puts
 #testes
 puts " Testando o sistema com outros valores "
 puts
-puts fase_pandemica(0.81 , 0.1 , 0.2) #FASE AZUL
+puts fase_pandemica(0.1 , 0.1 , 0.2) #FASE AZUL
 puts fase_pandemica(0.2 , 0.8 , 0.4) #FASE VERDE
 puts fase_pandemica(0.1 , 0.8 , 0.6) #FASE AMARELA
 puts fase_pandemica(0.1 , 0.2 , 0.67) #FASE LARANJA
