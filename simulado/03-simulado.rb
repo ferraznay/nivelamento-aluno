@@ -5,7 +5,7 @@
 
 
 def calcula_media(array)
-    n = 0
+    n = 0.0
     for i in (0..array.size-1)
     n = n + array[i]
     end

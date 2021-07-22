@@ -18,25 +18,29 @@ def negativos_positivos(array)
     novo_array = []
     for n in (0..array.size-1)
         
-    if array[n] > 0 
-    novo_array[n] = array[n+1]
-    positivos = positivos + 1
-    positivos = positivos / array.size
+        if array[n] > 0 
+            positivos = positivos + 1
 
-    elsif array[n] < 0
-        novo_array[n] = array[n+1]
-        negativos = negativos + 1
-        negativos = negativos / array.size
-    else 
-        zeros = zeros / array
-        novo_array[n] = array[n+1]
-      
+            elsif array[n] < 0
+            
+            negativos = negativos + 1
+           
+                else 
+                zeros = zeros + 1   
+        end
         
-   
     end
-    return novo_array 
-end
+    
+    positivos = positivos.to_f / array.size
+    zeros = zeros.to_f / array.size
+    negativos = negativos.to_f / array.size
+    resultado = [ positivos, zeros, negativos]
+    return resultado
 
 end
 
+print(negativos_positivos([1, 2, 0, -1]))
+puts
+print(negativos_positivos([2, 3, 1,0, -2]))
+puts
 print(negativos_positivos([1, 2, 0, -1]))

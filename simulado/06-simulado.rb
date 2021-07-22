@@ -5,29 +5,21 @@
 #     print(menor_maior([10, 0, -1, -500, 20, 100])) # deve imprimir [-500, 100]
 #     puts
 
-def exibe_array(array)
-    for n in (0..array.size-1)
-        print array[n]
-        if n < array.size-1
-            print ","
-        end
-    end
-    puts
-end
-def menor_maior (array)
-    novo_array = []
-    menor = 0
-    maior = 0
-    for n in (0..array.size-1)
-        if n <= 0 
-           novo_array[menor] = array [n]
-        
-        elsif 
-            novo_array[maior] = array [n]
-        end
-    end
 
-        return novo_array 
+def menor_maior (array)
+    menor = array[0]
+    maior = array[0]
+    for n in (0..array.size-1)
+        if array[n] > maior
+            maior = array[n]
+                  
+        elsif array[n] < menor
+            menor = array[n]
+        end
+        resultado = [menor , maior]
+
+    end
+    return resultado
 end
 
 

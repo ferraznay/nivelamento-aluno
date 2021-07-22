@@ -24,7 +24,8 @@ def imprime_tabela(n)
     
     for linha in (1..n)
         for coluna in (1..linha)
-            print n
+            print linha + coluna
+            print " "
         end
         puts
     end    
