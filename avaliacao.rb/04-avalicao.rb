@@ -20,32 +20,24 @@
 
 
 def altura_arvore_utopica (altura_inicial, quantidade_ciclos)
-    if altura_inicial <= 0 || quantidade_ciclos < 0
+    if altura_inicial > 0 && quantidade_ciclos >= 0
+           
+        novo_array = altura_inicial
+
+        for n in (1..quantidade_ciclos)
+            if n % 2 == 1 
+                novo_array = novo_array * 2
+            else
+                novo_array = novo_array + 1
+            end
+        end
+        return novo_array
+    else
         return nil
-    end
-        novo_array = []
-        primavera = 0
-        verao = 0
-         if altura_inicial == 0
-            return altura_inicial
-         elsif altura_inicial == 1
-                return altura_inicial + 1
-         else
-           altura_inicial * 2
-         end
-                for i in (0..quantidade_ciclos.size-1)
-                    if novo_array[i] == primavera
-                        tamanho_arvore = tamanho_arvore * 2
-                    elsif novo_array[i] == verao
-                        tamanho_arvore = tamanho_arvore + 1                  
-                    end
-            
-                end
-        
-       
-    
-    return  novo_array
+    end 
 end
+
+
 
 puts(altura_arvore_utopica(2, 5))
 # deve imprimir 22 

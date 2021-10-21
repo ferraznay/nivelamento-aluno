@@ -13,15 +13,25 @@
 # Ex:
 
 def calcula_pi(numero)
-    dobro_pi = 0.0
-    for n in (0..numero.size-1)
-        n = numero
-    dobro_pi =  1 / n - 1 / (n + 2)
-      
+
+    if numero >= 1
+        x = 1
+        dobro_pi = 0
+
+        for n in (1..numero)
+            if n % 2 == 1
+                dobro_pi = dobro_pi + (4.0 / x)
+            else
+                dobro_pi = dobro_pi - (4.0 / x)
+            end
+            x = x + 2
+        end
+        return dobro_pi
+    else 
+        return nil
     end
-    resultado = dobro_pi * n
-    return resultado
 end
+
 
 puts(calcula_pi(4))
 # deve retornar o valor de (4/1 - 4/3 + 4/5 - 4/7), ou seja, 2.8952380952380956
